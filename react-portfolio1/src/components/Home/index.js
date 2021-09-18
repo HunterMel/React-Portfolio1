@@ -6,8 +6,8 @@ function Home() {
             <div class="main">
                 <div class="bg"></div>
                     <div class="text">
-                    jennifer lindsey
-                    <h1>web developer</h1>
+                    Hunter Johnson
+                    <h1>Product Owner and Junior Web developer</h1>
                 </div>
             </div>
         </div>

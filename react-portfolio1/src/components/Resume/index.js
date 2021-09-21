@@ -27,16 +27,17 @@ const Resume = () => {
                             <li>NodeJS</li>
                             <li>Express</li>
                             <li>MongoDB</li>
-                            <li>Mongoos</li>
+                            <li>Mongoose</li>
                             <li>GraphQL</li>
                         </ul>
                     </section>
                     <h4>Education</h4>
                     <section id='resume-info'>
                         <p>Vanderbilt University Bootcamp Certificate</p>
-                        <p>A 24-week intensive program focused on gaining technical programming skills in HTML5, CSS3, JavaScript, jQuery, Bootstrap, Firebase, Node Js, MySQL, MongoDB, Express, Handelbars.js, GraphQL & ReactJS.
+                        <p> Through a fast-paced, immersive curriculum, I've learned in-demand front-end and back-end application technologies.
                         </p>
                         <p>The University Of Tennessee Knoxville</p>
+                        <p>Kinesiology</p>
                     </section>
                 </div>
         </div>

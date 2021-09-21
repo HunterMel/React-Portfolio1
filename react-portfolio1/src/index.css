@@ -111,7 +111,7 @@ font-family: 'Montserrat', sans-serif;
   display: flex;
   /*flex-direction: column; */
   margin: 10px 0 20px 0;
-  border: 3px solid var(--light);
+  border: 50px solid var(--light);
   border-radius: var(--border-radius);
   background-color: var(--secondary);
   color: var(--dark);

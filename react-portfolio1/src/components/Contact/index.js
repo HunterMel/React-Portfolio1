@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
 import { validateEmail } from '../../utils/helpers'
+import Footer from '../Footer'
 
 
 function Contact(props) {
@@ -36,6 +37,8 @@ function Contact(props) {
     return (
         <div class='container-fluid'>
             <h1> Contact Me </h1>
+
+            <h3>{errorMessage}</h3>
             <row>
             <Form id='contact-info' onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -55,7 +58,7 @@ function Contact(props) {
                 </Button>
             </Form>
             </row>
-
+            <Footer />
         </div>
     )
 }

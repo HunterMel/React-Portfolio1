@@ -3,13 +3,13 @@ import React from 'react';
 
 
 function NavTabs(props) {
-
+    return(
         <Navbar bg="dark" variant="dark">
             <Container>
                 <Navbar.Brand href="#home">
                     <img
                         alt=""
-                        src={logo}
+                    
                         width="30"
                         height="30"
                         className="d-inline-block align-top"
@@ -24,7 +24,7 @@ function NavTabs(props) {
                     <Nav.Link onClick={() => props.handlePageChange('Resume')} href='#resume'>Resume</Nav.Link>
                 </Nav>
             </Container>
-        </Navbar>
+        </Navbar>)
 }
 
 export default NavTabs

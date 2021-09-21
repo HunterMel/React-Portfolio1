@@ -4,7 +4,7 @@ import About from './components/About';
 import NavTabs from './components/NavTabs'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
-//import Footer from './components/Footer'
+import Footer from './components/Footer'
 import Resume from './components/Resume'
 import 'bootstrap/dist/css/bootstrap.min.css'
 

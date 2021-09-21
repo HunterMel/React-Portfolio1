@@ -1,2 +1,2 @@
 # React-Portfolio1
-![](images/portfolio.png)
+![](image/portfolio.png)

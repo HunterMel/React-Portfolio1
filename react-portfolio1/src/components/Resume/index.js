@@ -1,54 +1,46 @@
-import {Container, Row, Col, Card, Button } from 'react-bootstrap'
-
 import React from 'react'
+import { BiCode, BiCodeAlt } from 'react-icons/bi'
+import { VscMilestone } from 'react-icons/vsc'
 
-function Projects() {
-    const portfolio = [
-        {
-            name:'Budget-Tracker',
-            description: 'Updated an existing budget tracker application to allow for offline access and functionality',
-            img: require('../../assets/budget.png').default,
-            github: 'https://github.com/Trayehunter1/Budget-Tracker',
-            deployed:' https://trayehunter1.github.io/Budget-Tracker/'
-        },
-        {
-            name:'Chore-Wallet',
-            description:'A collaborative assignment which allows users to select a chore to accomplish, display thier weekly schedule as it uploads to a calender, and use a payment functionality to recieve direct deposits',
-            img:require('../../assets/chore.png').default,
-            github:'https://github.com/Trayehunter1/ChoreWallet',
-            deployed:'https://trayehunter1.github.io/ChoreWallet/'
-        },
-        {
-            name:'Object-Relational-Mapping',
-            description:'A back-end application for an e-commerce site, this project uses Express.js API and configure it to use Sequelize to interact with a MySQL database',
-            img:require('../../assets/mapping.png').default,
-            github:'https://github.com/Trayehunter1/Object-Relational-Mapping',
-            deployed:'https://trayehunter1.github.io/Object-Relational-Mapping/'
-        },
-    ]
-
+const Resume = () => {
     return (
-
-        <Container id='projects' fluid>
-            <Row>
-                {portfolio.map((portfolio) => (
-                <Col>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={portfolio.img} fluid />
-                        <Card.Body>
-                            <Card.Title>{portfolio.name}</Card.Title>
-                            <Card.Text>
-                                {portfolio.description}
-                            </Card.Text>
-                            <Button variant='info' href={portfolio.github} target='_blank'>GitHub</Button>
-                            <Button variant='warning' href={portfolio.deployed} target='_blank'>Application</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                ))}
-            </Row>
-        </Container>
+        <div class='container-fluid' id='resume'>
+                <h2> <BiCode/> Resume <BiCodeAlt/></h2>
+                <div class='container' id='resume'>
+                    <h3> Hunter Johnson </h3>
+                    <section id='resume-info'>
+                        <p>Systematic Product Owner with a detail-oriented and thorough approach to defining requirements, outlining specifications and working with team members to bring to life high-quality products for customers. I'm a planner and problem-solver with in-depth understanding of technical products. Currently, developing my coding knowlege and hands on experience through a coding bootcamp at Vanderbilt to bringforth top techical expertise within the Product field.
+                        </p>
+                    </section>
+                    <h4><VscMilestone/> Technical Skills</h4>
+                    <section id='resume-info'>
+                        <h4>Front End</h4>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>React</li>
+                        </ul>
+                        <h4>Back End</h4>
+                        <ul>
+                            <li>NodeJS</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Mongoos</li>
+                            <li>GraphQL</li>
+                        </ul>
+                    </section>
+                    <h4>Education</h4>
+                    <section id='resume-info'>
+                        <p>Vanderbilt University Bootcamp Certificate</p>
+                        <p>A 24-week intensive program focused on gaining technical programming skills in HTML5, CSS3, JavaScript, jQuery, Bootstrap, Firebase, Node Js, MySQL, MongoDB, Express, Handelbars.js, GraphQL & ReactJS.
+                        </p>
+                        <p>The University Of Tennessee Knoxville</p>
+                    </section>
+                </div>
+        </div>
     )
 }
 
-export default Projects
+export default Resume

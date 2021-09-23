@@ -3,7 +3,7 @@ import Image from '../../assets/Image.png';
 function About() {
   return (
     <section className="my-5">
-      <h1 id="about">Who am I?</h1>
+      <h1 id="about">Learn more about me</h1>
       <img src={Image} className="my-2" style={{ width: "100%" }} alt="cover" />
       <div className="my-2">
         <p>
